@@ -28,16 +28,16 @@ $discount_percent = filter_input(INPUT_POST, 'discount_percent');
         <span><?php echo $product_description; ?></span><br>
 
         <label>List Price:</label>
-        <span><?php echo $list_price_format; ?></span><br>
+        <span><?php echo $list_price; ?></span><br>
 
         <label>Standard Discount:</label>
         <span><?php echo $discount_percent; ?></span><br>
 
         <label>Discount Amount:</label>
-        <span><?php echo htmlspecialchars($discount_format); ?></span><br>
+        <span><?php echo $discount; ?></span><br>
 
         <label>Discount Price:</label>
-        <span><?php echo htmlspecialchars($discount_price_format); ?></span><br>
+        <span><?php echo $discount_price; ?></span><br>
     </main>
 </body>
 </html>
