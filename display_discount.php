@@ -3,7 +3,9 @@ $product_description = filter_input(INPUT_POST, 'product_description');
 $list_price = filter_input(INPUT_POST, 'list_price');
 $discount_percent = filter_input(INPUT_POST, 'discount_percent');
 
-        $discount = $list_price * $discount_percent * .01;
+        $discount_percent_num = strip_tags($discount_percent); //test Q9
+
+        $discount = $list_price * $discount_percent_num * .01; //test Q9
         $discount_price = $list_price - $discount;
         
         $list_price_format = "$".number_format($list_price, 2);
