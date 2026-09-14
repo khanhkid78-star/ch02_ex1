@@ -6,11 +6,10 @@ $discount_percent = filter_input(INPUT_POST, 'discount_percent');
         $discount = $list_price * $discount_percent * .01;
         $discount_price = $list_price - $discount;
         
-        /*$list_price_format = "$".number_format($list_price, 2);
+        $list_price_format = "$".number_format($list_price, 2);
         $discount_percent_format = $discount_percent."%";
         $discount_format = "$".number_format($discount, 2);
         $discount_price_format = "$".number_format($discount_price, 2);
-        */
 
 ?>
 
@@ -29,16 +28,16 @@ $discount_percent = filter_input(INPUT_POST, 'discount_percent');
         <span><?php echo $product_description; ?></span><br>
 
         <label>List Price:</label>
-        <span><?php echo $list_price; ?></span><br>
+        <span><?php echo $list_price_format; ?></span><br>
 
         <label>Standard Discount:</label>
-        <span><?php echo $discount_percent; ?></span><br>
+        <span><?php echo $discount_percent_format; ?></span><br>
 
         <label>Discount Amount:</label>
-        <span><?php echo $discount; ?></span><br>
+        <span><?php echo $discount_format; ?></span><br>
 
         <label>Discount Price:</label>
-        <span><?php echo $discount_price; ?></span><br>
+        <span><?php echo $discount_price_format; ?></span><br>
     </main>
 </body>
 </html>
