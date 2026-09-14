@@ -24,7 +24,7 @@ $discount_percent = filter_input(INPUT_POST, 'discount_percent');
 </head>
 <body>
     <main>
-        <h1>This page is under construction</h1>
+        <h1>Product Discount Calculator</h1>
 
         <label>Product Description:</label>
         <span><?php echo htmlspecialchars($product_description); ?></span><br>
